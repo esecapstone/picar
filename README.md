@@ -60,7 +60,7 @@ Copy packages to the catkin workspace when needed (remember to source and catkin
 
 In your home directory (You only ever need to do this once): 
 
-**git clone https://github.com/hucklebilly/Capstone_2022.git**
+**git clone https://github.com/esecapstone/picar**
 
 
 

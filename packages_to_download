@@ -1,0 +1,18 @@
+# Download the following packages for each sensor:
+
+# CircuitPython (needed for all sensors)
+https://circuitpython.org/downloads 
+
+# Enabling I2C (necessary for steering, motor, IMU)
+https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c 
+
+# Camera
+https://picamera.readthedocs.io/en/release-1.13/ (to create your own package)
+
+#  IMU (i2c address: 0x68)
+sudo pip3 install adafruit-circuitpython-mpu6050
+
+# servo (steering) (i2c address: 0x40)
+sudo pip3 install adafruit-circuitpython-pca9685
+
+# ESC (motor) (i2c address: 0x70)

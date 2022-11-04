@@ -3,8 +3,8 @@ import time
 GPIO.setwarnings(False)     # Ignore warning for now
 GPIO.setmode(GPIO.BOARD)    # Use physical pin numberin
 
-TRIG = 13   # define input and output pins
-ECHO = 22
+TRIG = 12   # define input and output pins (NOT GPIO number)
+ECHO = 11
 
 print("setting up...")
 # set up the input and output pins

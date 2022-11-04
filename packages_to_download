@@ -16,3 +16,4 @@ sudo pip3 install adafruit-circuitpython-mpu6050
 sudo pip3 install adafruit-circuitpython-pca9685
 
 # ESC (motor) (i2c address: 0x70)
+also needs pca9685 package listed under "servo (steering)"

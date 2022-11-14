@@ -1,22 +1,23 @@
-#not totally sure this is correct/going to work, but we
-#will try it!
+#Reading of 0 means magnet detected,
+#reading of 1 means no magnet detected
+
+import RPi.GPIO as IO
+import time
+import sys
+import argparse
 import busio
-import digitalio
-import board
+import smbus
+from time import sleep
 import adafruit_mcp3xxx.mcp3008 as MCP
 from adafruit_mcp3xxx.analog_in import AnalogIn
+import math
 
-# create the spi bus
-spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
+IO.setwarnings(False)
+IO.setmode(IO.BCM)
 
-# create the cs (chip select)
-cs = digitalio.DigitalInOut(board.D5)
+GPIO_num = 16
+IO.setup(GPIO_num,IO.IN,IO.PUD_UP)
 
-# create the mcp object
-mcp = MCP.MCP3008(spi, cs)
-
-# create an analog input channel on pin 0
-chan = AnalogIn(mcp, MCP.P0)
-
-print('Raw ADC Value: ', chan.value)
-print('ADC Voltage: ' + str(chan.voltage) + 'V')
+while True:
+    curr_pin_val = IO.input(GPIO_num)
+    print(curr_pin_val)

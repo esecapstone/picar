@@ -17,3 +17,10 @@ sudo pip3 install adafruit-circuitpython-pca9685
 
 # ESC (motor) (i2c address: 0x70)
 also needs pca9685 package listed under "servo (steering)"
+
+# Lidar
+For code Lidar_test1: sudo pip3 install adafruit-circuitpython-rplidar
+
+For code lidar_test2: sudo pip3 install rplidar-roboticia 
+
+# 

@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
+
 """
 Consume LIDAR measurement file and create an image for display.
 

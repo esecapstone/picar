@@ -19,8 +19,11 @@ sudo pip3 install adafruit-circuitpython-pca9685
 also needs pca9685 package listed under "servo (steering)"
 
 # Lidar
-For code Lidar_test1: sudo pip3 install adafruit-circuitpython-rplidar
+sudo pip3 install adafruit-circuitpython-rplidar
 
-For code lidar_test2: sudo pip3 install rplidar-roboticia 
+If you see error message: permission denied to '/dev/ttyUSB0', this is because the 'dev/ttyUSB0' device has the group of dialout. So you need to add current user to the dialout group, by typing: 
+sudo adduser username dialout
+
+you will need to log out and back in again for this to take effect. 
 
 # 

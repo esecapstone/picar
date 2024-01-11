@@ -12,7 +12,7 @@ def Servo_Motor_Initialization():
    return pca
 
 def Motor_Start(pca):
-   x = input("Press and hold ez button. When RED LED turns red wait 3 seconds.")
+   x = input("Press and hold EZ button until the RED LED is off.")
    Motor_Speed(pca, 1)
    time.sleep(3)
    Motor_Speed(pca, 0)

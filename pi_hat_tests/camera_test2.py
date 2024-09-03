@@ -10,6 +10,6 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1440)
 # take frame
 ret, frame = cap.read()
 # write frame to file
-cv2.imwrite('./Desktop/image.jpg', frame)
+cv2.imwrite('image.jpg', frame)
 # release camera
 cap.release()

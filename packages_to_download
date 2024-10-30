@@ -1,7 +1,7 @@
 # Download the following packages for each sensor:
 
 # CircuitPython (needed for all sensors)
-https://circuitpython.org/downloads 
+https://pypi.org/project/Adafruit-Blinka/
 
 # Enabling I2C (necessary for steering, motor, IMU)
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c 
